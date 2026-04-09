@@ -1,15 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mizania - Privacy Policy</title>
+<title>Mizania Support and Privacy Policy</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px; color: #1a1a1a; line-height: 1.7; }
-  h1 { color: #003366; font-size: 24px; border-bottom: 2px solid #003366; padding-bottom: 8px; }
-  h2 { color: #003366; font-size: 18px; margin-top: 28px; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px; color: #1a1a1a; line-height: 1.7; }
+  h1 { color: #003366; font-size: 28px; border-bottom: 2px solid #003366; padding-bottom: 8px; }
+  h2 { color: #003366; font-size: 20px; margin-top: 30px; }
+  h3 { color: #003366; font-size: 17px; margin-top: 22px; }
   .date { color: #666; font-size: 14px; }
-  .highlight { background: #e8f5e9; padding: 12px 16px; border-radius: 8px; border-left: 4px solid #1D9E75; margin: 16px 0; }
+  .box { background: #f5f8fb; padding: 14px 16px; border-radius: 8px; border-left: 4px solid #1D9E75; margin: 16px 0; }
   ul { padding-left: 20px; }
   li { margin-bottom: 6px; }
   .lang-toggle { text-align: center; margin-bottom: 24px; }
@@ -22,121 +23,199 @@
 <script>
 function showLang(l) {
   document.querySelectorAll('section[lang]').forEach(s => s.style.display = 'none');
-  document.querySelector('section[lang="'+l+'"]').style.display = 'block';
+  document.querySelector('section[lang="' + l + '"]').style.display = 'block';
 }
 </script>
 </head>
 <body>
+
 <div class="lang-toggle">
   <a href="#" onclick="showLang('en');return false">English</a>
-  <a href="#" onclick="showLang('fr');return false">Francais</a>
+  <a href="#" onclick="showLang('fr');return false">Français</a>
   <a href="#" onclick="showLang('ar');return false">العربية</a>
 </div>
+
 <section lang="en" style="display:block">
-<h1>Mizania - Privacy Policy</h1>
-<p class="date">Effective date: March 31, 2026</p>
-<div class="highlight"><strong>Summary:</strong> Mizania stores all your data locally on your device. No financial data is ever sent to our servers or shared with third parties.</div>
-<h2>1. Data We Collect</h2>
-<p>Mizania does <strong>not</strong> collect, transmit, or store any personal or financial data on external servers. All data you enter (transactions, accounts, budgets, goals, bills, darets, souk prices) is stored exclusively on your device.</p>
-<h2>2. Data Storage and Encryption</h2>
-<ul>
-  <li>All data is encrypted at rest using <strong>AES-256-GCM</strong> authenticated encryption.</li>
-  <li>Encryption keys are stored in the device's secure hardware keychain (Keystore on Android, Keychain on iOS).</li>
-  <li>No plaintext financial data is ever written to storage.</li>
-  <li>Backup exports are encrypted with a user-chosen password using PBKDF2 + AES-256-GCM.</li>
-</ul>
-<h2>3. Camera and Microphone</h2>
-<ul>
-  <li><strong>Camera:</strong> Used only when you choose to scan a receipt. Images are processed on-device and never uploaded.</li>
-  <li><strong>Microphone:</strong> Used only when you choose voice expense entry. Audio is processed on-device and never recorded or stored.</li>
-</ul>
-<h2>4. Biometric Authentication</h2>
-<p>Mizania supports Face ID / fingerprint to protect the app. Biometric data is handled entirely by the operating system. Mizania never accesses or stores biometric data.</p>
-<h2>5. Notifications</h2>
-<p>Mizania sends local notifications (bill reminders, budget alerts, daily reminders) that are scheduled on-device. No push notification service or external server is involved.</p>
-<h2>6. Advertisements</h2>
-<p>Mizania may display ads through third-party ad networks. These networks may collect device identifiers for ad targeting as described in their own privacy policies. Mizania itself does not share your financial data with ad providers.</p>
-<h2>7. Data Sharing</h2>
-<p>Mizania does <strong>not</strong> share any data with third parties. Your financial data never leaves your device unless you explicitly export a backup.</p>
-<h2>8. Data Deletion</h2>
-<p>You can delete all your data at any time using the "Safe Reset" option in the app. This permanently removes all stored data and encryption keys from the device.</p>
-<h2>9. Children's Privacy</h2>
-<p>Mizania is not directed at children under 13. We do not knowingly collect information from children.</p>
-<h2>10. Changes to This Policy</h2>
-<p>We may update this policy from time to time. Changes will be reflected in the "Effective date" above.</p>
-<h2>11. Contact</h2>
-<p>For questions about this privacy policy, contact us at: <strong>kasonadil@gmail.com</strong></p>
+  <h1>Mizania Support and Privacy Policy</h1>
+  <p class="date">Effective date: March 31, 2026</p>
+
+  <div class="box">
+    <strong>Support:</strong> For help with Mizania, contact <strong>kasonadil@gmail.com</strong>.
+  </div>
+
+  <h2>Support</h2>
+  <p>Mizania is a budgeting and expense tracker designed to help users manage daily spending with clarity and privacy.</p>
+  <p>If you need support, have a question, want to report a bug, or need help using the app, contact:</p>
+  <p><strong>Email:</strong> kasonadil@gmail.com</p>
+
+  <h2>Privacy Policy</h2>
+  <div class="box">
+    <strong>Summary:</strong> Mizania stores your financial data locally on your device. No financial data is sent to our servers.
+  </div>
+
+  <h3>1. Data We Collect</h3>
+  <p>Mizania does not collect, transmit, or store your personal or financial data on external servers. All data you enter, including transactions, accounts, budgets, goals, bills, darets, and souk prices, is stored on your device.</p>
+
+  <h3>2. Data Storage and Encryption</h3>
+  <ul>
+    <li>All data is encrypted at rest using AES-256-GCM authenticated encryption.</li>
+    <li>Encryption keys are stored in the device secure keychain or keystore.</li>
+    <li>No plaintext financial data is written to storage.</li>
+    <li>Backup exports are encrypted with a user chosen password using PBKDF2 and AES-256-GCM.</li>
+  </ul>
+
+  <h3>3. Camera and Microphone</h3>
+  <ul>
+    <li><strong>Camera:</strong> Used only when you choose to scan a receipt. Images are processed on device and are not uploaded.</li>
+    <li><strong>Microphone:</strong> Used only when you choose voice expense entry. Audio is processed on device and is not recorded or stored by us.</li>
+  </ul>
+
+  <h3>4. Biometric Authentication</h3>
+  <p>Mizania supports Face ID and fingerprint authentication to protect access to the app. Biometric data is handled entirely by the operating system. Mizania does not access or store biometric data.</p>
+
+  <h3>5. Notifications</h3>
+  <p>Mizania uses local notifications such as bill reminders, budget alerts, and daily reminders. These are scheduled on device. No external push notification server is involved.</p>
+
+  <h3>6. Advertisements</h3>
+  <p>If advertisements are enabled in a future version of Mizania, third party ad networks may collect device identifiers in accordance with their own privacy policies. Mizania does not share your financial data with ad providers.</p>
+
+  <h3>7. Data Sharing</h3>
+  <p>Mizania does not share your financial data with third parties. Your financial data stays on your device unless you explicitly export a backup.</p>
+
+  <h3>8. Data Deletion</h3>
+  <p>You can delete your data at any time using the Safe Reset option in the app. This removes stored data and encryption keys from the device.</p>
+
+  <h3>9. Children's Privacy</h3>
+  <p>Mizania is not directed to children under 13.</p>
+
+  <h3>10. Changes to This Policy</h3>
+  <p>We may update this page from time to time. Any changes will be reflected in the effective date above.</p>
+
+  <h3>11. Contact</h3>
+  <p>For support or privacy questions, contact: <strong>kasonadil@gmail.com</strong></p>
 </section>
+
 <section lang="fr">
-<h1>Mizania - Politique de confidentialite</h1>
-<p class="date">Date d'effet : 31 mars 2026</p>
-<div class="highlight"><strong>Resume :</strong> Mizania stocke toutes vos donnees localement sur votre appareil. Aucune donnee financiere n'est envoyee a nos serveurs ni partagee avec des tiers.</div>
-<h2>1. Donnees collectees</h2>
-<p>Mizania ne collecte, ne transmet et ne stocke <strong>aucune</strong> donnee personnelle ou financiere sur des serveurs externes. Toutes les donnees que vous saisissez sont stockees exclusivement sur votre appareil.</p>
-<h2>2. Stockage et chiffrement</h2>
-<ul>
-  <li>Toutes les donnees sont chiffrees au repos avec <strong>AES-256-GCM</strong>.</li>
-  <li>Les cles de chiffrement sont stockees dans le coffre-fort materiel de l'appareil.</li>
-  <li>Aucune donnee financiere en clair n'est ecrite en stockage.</li>
-  <li>Les sauvegardes exportees sont chiffrees avec un mot de passe choisi par l'utilisateur.</li>
-</ul>
-<h2>3. Camera et microphone</h2>
-<ul>
-  <li><strong>Camera :</strong> Utilisee uniquement pour scanner un recu. Les images sont traitees sur l'appareil.</li>
-  <li><strong>Microphone :</strong> Utilise uniquement pour la saisie vocale. L'audio n'est jamais enregistre.</li>
-</ul>
-<h2>4. Authentification biometrique</h2>
-<p>Mizania utilise Face ID / empreinte digitale pour proteger l'application. Les donnees biometriques sont gerees par le systeme d'exploitation.</p>
-<h2>5. Notifications</h2>
-<p>Mizania envoie des notifications locales (rappels de factures, alertes budget). Aucun serveur externe n'est implique.</p>
-<h2>6. Publicites</h2>
-<p>Mizania peut afficher des publicites via des reseaux tiers. Ces reseaux peuvent collecter des identifiants d'appareil. Mizania ne partage aucune donnee financiere avec les fournisseurs de publicite.</p>
-<h2>7. Partage de donnees</h2>
-<p>Mizania ne partage <strong>aucune</strong> donnee avec des tiers.</p>
-<h2>8. Suppression des donnees</h2>
-<p>Vous pouvez supprimer toutes vos donnees a tout moment via l'option "Reinitialisation" dans l'application.</p>
-<h2>9. Confidentialite des enfants</h2>
-<p>Mizania n'est pas destinee aux enfants de moins de 13 ans.</p>
-<h2>10. Modifications</h2>
-<p>Cette politique peut etre mise a jour. Les changements seront refletes dans la date d'effet.</p>
-<h2>11. Contact</h2>
-<p>Pour toute question : <strong>kasonadil@gmail.com</strong></p>
+  <h1>Mizania Support et Politique de confidentialité</h1>
+  <p class="date">Date d'effet : 31 mars 2026</p>
+
+  <div class="box">
+    <strong>Support :</strong> Pour toute aide concernant Mizania, contactez <strong>kasonadil@gmail.com</strong>.
+  </div>
+
+  <h2>Support</h2>
+  <p>Mizania est une application de budget et de suivi des dépenses conçue pour aider les utilisateurs à mieux gérer leurs finances au quotidien.</p>
+  <p>Pour toute question, assistance ou signalement de problème, contactez :</p>
+  <p><strong>Email :</strong> kasonadil@gmail.com</p>
+
+  <h2>Politique de confidentialité</h2>
+  <div class="box">
+    <strong>Résumé :</strong> Mizania stocke vos données financières localement sur votre appareil. Aucune donnée financière n'est envoyée à nos serveurs.
+  </div>
+
+  <h3>1. Données collectées</h3>
+  <p>Mizania ne collecte, ne transmet et ne stocke aucune donnée personnelle ou financière sur des serveurs externes. Toutes les données saisies, y compris transactions, comptes, budgets, objectifs, factures, darets et prix du souk, sont stockées sur votre appareil.</p>
+
+  <h3>2. Stockage et chiffrement</h3>
+  <ul>
+    <li>Toutes les données sont chiffrées au repos avec AES-256-GCM.</li>
+    <li>Les clés de chiffrement sont stockées dans le coffre sécurisé de l'appareil.</li>
+    <li>Aucune donnée financière en clair n'est écrite en stockage.</li>
+    <li>Les sauvegardes exportées sont chiffrées avec un mot de passe choisi par l'utilisateur via PBKDF2 et AES-256-GCM.</li>
+  </ul>
+
+  <h3>3. Caméra et microphone</h3>
+  <ul>
+    <li><strong>Caméra :</strong> utilisée uniquement pour scanner un reçu. Les images sont traitées sur l'appareil et ne sont pas envoyées.</li>
+    <li><strong>Microphone :</strong> utilisé uniquement pour la saisie vocale des dépenses. L'audio est traité sur l'appareil et n'est pas enregistré par nous.</li>
+  </ul>
+
+  <h3>4. Authentification biométrique</h3>
+  <p>Mizania prend en charge Face ID et l'empreinte digitale pour protéger l'accès à l'application. Les données biométriques sont gérées entièrement par le système d'exploitation. Mizania ne les stocke pas.</p>
+
+  <h3>5. Notifications</h3>
+  <p>Mizania utilise des notifications locales comme les rappels de factures, alertes budget et rappels quotidiens. Aucun serveur push externe n'est impliqué.</p>
+
+  <h3>6. Publicités</h3>
+  <p>Si des publicités sont activées dans une future version de Mizania, des réseaux publicitaires tiers peuvent collecter des identifiants d'appareil selon leurs propres politiques de confidentialité. Mizania ne partage pas vos données financières avec les annonceurs.</p>
+
+  <h3>7. Partage des données</h3>
+  <p>Mizania ne partage pas vos données financières avec des tiers. Vos données restent sur votre appareil sauf si vous exportez volontairement une sauvegarde.</p>
+
+  <h3>8. Suppression des données</h3>
+  <p>Vous pouvez supprimer vos données à tout moment avec l'option Réinitialisation sécurisée dans l'application. Cela efface les données stockées et les clés de chiffrement du dispositif.</p>
+
+  <h3>9. Confidentialité des enfants</h3>
+  <p>Mizania n'est pas destinée aux enfants de moins de 13 ans.</p>
+
+  <h3>10. Modifications</h3>
+  <p>Cette page peut être mise à jour. Toute modification sera indiquée dans la date d'effet ci-dessus.</p>
+
+  <h3>11. Contact</h3>
+  <p>Pour toute question liée au support ou à la confidentialité, contactez : <strong>kasonadil@gmail.com</strong></p>
 </section>
+
 <section lang="ar">
-<h1>ميزانية - سياسة الخصوصية</h1>
-<p class="date">تاريخ السريان: 31 مارس 2026</p>
-<div class="highlight"><strong>ملخص:</strong> ميزانية تخزن جميع بياناتك محليا على جهازك. لا يتم ارسال اي بيانات مالية الى خوادمنا او مشاركتها مع اطراف ثالثة.</div>
-<h2>1. البيانات التي نجمعها</h2>
-<p>ميزانية <strong>لا</strong> تجمع او ترسل او تخزن اي بيانات شخصية او مالية على خوادم خارجية. جميع البيانات التي تدخلها تُخزن حصريا على جهازك.</p>
-<h2>2. التخزين والتشفير</h2>
-<ul>
-  <li>جميع البيانات مشفرة باستخدام <strong>AES-256-GCM</strong>.</li>
-  <li>مفاتيح التشفير مخزنة في الخزنة الآمنة للجهاز.</li>
-  <li>لا تُكتب اي بيانات مالية بنص واضح.</li>
-  <li>النسخ الاحتياطية المُصدَّرة مشفرة بكلمة مرور يختارها المستخدم.</li>
-</ul>
-<h2>3. الكاميرا والميكروفون</h2>
-<ul>
-  <li><strong>الكاميرا:</strong> تُستخدم فقط لمسح الإيصالات. تُعالج الصور على الجهاز ولا تُرفع.</li>
-  <li><strong>الميكروفون:</strong> يُستخدم فقط للإدخال الصوتي. لا يُسجل الصوت ولا يُخزن.</li>
-</ul>
-<h2>4. المصادقة البيومترية</h2>
-<p>ميزانية تدعم Face ID / بصمة الإصبع. البيانات البيومترية يديرها نظام التشغيل بالكامل.</p>
-<h2>5. الإشعارات</h2>
-<p>ميزانية ترسل إشعارات محلية (تذكير بالفواتير، تنبيهات الميزانية). لا يوجد خادم خارجي.</p>
-<h2>6. الإعلانات</h2>
-<p>قد تعرض ميزانية إعلانات عبر شبكات إعلانية. لا تشارك ميزانية بياناتك المالية مع مزودي الإعلانات.</p>
-<h2>7. مشاركة البيانات</h2>
-<p>ميزانية <strong>لا</strong> تشارك اي بيانات مع اطراف ثالثة.</p>
-<h2>8. حذف البيانات</h2>
-<p>يمكنك حذف جميع بياناتك في اي وقت عبر خيار "إعادة التعيين الآمنة" في التطبيق.</p>
-<h2>9. خصوصية الأطفال</h2>
-<p>ميزانية ليست موجهة للأطفال دون 13 عاما.</p>
-<h2>10. التعديلات</h2>
-<p>قد نحدث هذه السياسة. ستنعكس التغييرات في تاريخ السريان.</p>
-<h2>11. التواصل</h2>
-<p>لأي استفسار: <strong>kasonadil@gmail.com</strong></p>
+  <h1>ميزانية الدعم وسياسة الخصوصية</h1>
+  <p class="date">تاريخ السريان: 31 مارس 2026</p>
+
+  <div class="box">
+    <strong>الدعم:</strong> لأي مساعدة بخصوص ميزانية، راسل <strong>kasonadil@gmail.com</strong>.
+  </div>
+
+  <h2>الدعم</h2>
+  <p>ميزانية هو تطبيق لإدارة الميزانية وتتبع المصاريف، صُمم لمساعدة المستخدم على تنظيم أمواله اليومية بوضوح وخصوصية.</p>
+  <p>إذا كنت تحتاج إلى مساعدة أو تريد الإبلاغ عن مشكلة أو لديك سؤال حول التطبيق، تواصل عبر:</p>
+  <p><strong>البريد الإلكتروني:</strong> kasonadil@gmail.com</p>
+
+  <h2>سياسة الخصوصية</h2>
+  <div class="box">
+    <strong>ملخص:</strong> ميزانية يخزن بياناتك المالية محليا على جهازك. لا يتم إرسال أي بيانات مالية إلى خوادمنا.
+  </div>
+
+  <h3>1. البيانات التي نجمعها</h3>
+  <p>ميزانية لا يجمع ولا يرسل ولا يخزن بياناتك الشخصية أو المالية على خوادم خارجية. كل البيانات التي تدخلها، بما في ذلك المعاملات والحسابات والميزانيات والأهداف والفواتير والدارت وأسعار السوق، تُخزن على جهازك.</p>
+
+  <h3>2. التخزين والتشفير</h3>
+  <ul>
+    <li>جميع البيانات مشفرة أثناء التخزين باستخدام AES-256-GCM.</li>
+    <li>مفاتيح التشفير تُخزن في المخزن الآمن الخاص بالجهاز.</li>
+    <li>لا يتم حفظ البيانات المالية كنص واضح.</li>
+    <li>النسخ الاحتياطية المصدرة تُشفر بكلمة مرور يختارها المستخدم باستخدام PBKDF2 و AES-256-GCM.</li>
+  </ul>
+
+  <h3>3. الكاميرا والميكروفون</h3>
+  <ul>
+    <li><strong>الكاميرا:</strong> تُستخدم فقط عند اختيار مسح الإيصالات. تتم معالجة الصور على الجهاز ولا يتم رفعها.</li>
+    <li><strong>الميكروفون:</strong> يُستخدم فقط عند اختيار الإدخال الصوتي للمصاريف. تتم معالجة الصوت على الجهاز ولا نقوم بتخزينه.</li>
+  </ul>
+
+  <h3>4. المصادقة البيومترية</h3>
+  <p>يدعم ميزانية Face ID وبصمة الإصبع لحماية الوصول إلى التطبيق. تتم إدارة البيانات البيومترية بالكامل من خلال نظام التشغيل. ميزانية لا يصل إليها ولا يخزنها.</p>
+
+  <h3>5. الإشعارات</h3>
+  <p>يستخدم ميزانية إشعارات محلية مثل تذكيرات الفواتير وتنبيهات الميزانية والتذكيرات اليومية. تتم جدولة هذه الإشعارات على الجهاز. لا يوجد خادم دفع خارجي.</p>
+
+  <h3>6. الإعلانات</h3>
+  <p>إذا تم تفعيل الإعلانات في إصدار مستقبلي من ميزانية، فقد تجمع شبكات إعلانية خارجية معرّفات الجهاز وفق سياساتها الخاصة. ميزانية لا يشارك بياناتك المالية مع مزودي الإعلانات.</p>
+
+  <h3>7. مشاركة البيانات</h3>
+  <p>ميزانية لا يشارك بياناتك المالية مع أطراف ثالثة. تبقى بياناتك على جهازك إلا إذا قمت أنت بتصدير نسخة احتياطية بشكل صريح.</p>
+
+  <h3>8. حذف البيانات</h3>
+  <p>يمكنك حذف بياناتك في أي وقت عبر خيار إعادة التعيين الآمنة داخل التطبيق. يؤدي ذلك إلى حذف البيانات المخزنة ومفاتيح التشفير من الجهاز.</p>
+
+  <h3>9. خصوصية الأطفال</h3>
+  <p>ميزانية غير موجه للأطفال دون سن 13 عاما.</p>
+
+  <h3>10. التعديلات</h3>
+  <p>قد نقوم بتحديث هذه الصفحة من وقت لآخر. ستظهر أي تعديلات في تاريخ السريان أعلاه.</p>
+
+  <h3>11. التواصل</h3>
+  <p>لأي أسئلة تتعلق بالدعم أو الخصوصية، تواصل عبر: <strong>kasonadil@gmail.com</strong></p>
 </section>
+
 <footer>Mizania &copy; 2026. All rights reserved.</footer>
+
 </body>
 </html>
